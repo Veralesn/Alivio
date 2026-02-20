@@ -1,5 +1,5 @@
-#Alivio   
-![главный экран сайта "Alivio"](img/desctop_alivio_card.png)
+# Alivio   
+![главный экран сайта "Alivio"](img/desctop_alivio_card.png)  
 Пример работы верстки    
 HTML и CSS  
 Адаптив  
