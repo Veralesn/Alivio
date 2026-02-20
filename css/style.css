@@ -68,6 +68,57 @@ button {
   color: var(--nav-menu-color);
   padding-right: 35px;
 }
+
+/* Burger menu */
+.right button {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 12px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+.right button:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+.sub_menu {
+  position: absolute;
+  top: 115px;
+  width: 200px;
+  height: fit-content;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px 0;
+  box-shadow: 0px 4px 18px #A5A5A5;
+}
+.optoin, .sub {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--nav-menu-color);
+  font-weight: 500;
+  padding: 15px 0;
+}
+.optoin:hover, .sub:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+.sub {
+  display: none;
+}
+/* Burger menu */
+
 .menu_start {
   padding: 13px 50px;
 }
@@ -83,7 +134,7 @@ button {
   font-size: 65px;
   font-weight: 700;
   font-family: 'Georgia', serif;
-  width: 440px;
+  max-width: 440px;
   color: var(--accent-color);
   padding-top: 174px;
   margin-bottom: 32px;
@@ -97,6 +148,7 @@ button {
 }
 .header_button {
   padding: 20px 50px;
+  margin-top: 50px;
 }
 /* Второй раздел */
 .work_wrapper {
@@ -341,6 +393,62 @@ video {
 }
 .footer_item:hover {
   opacity: 0.8;
+}
+/* Adaptive */
+@media screen and (max-width: 1540px) {
+.nav_wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header_wrapper {
+  padding: 0 15px;
+}
+}
+@media screen and (max-width: 1280px) {
+.nav__menu_logo {
+  margin-right: 30px;
+}
+.nav__menu {
+  gap: 30px;
+  margin-right: 10px;
+}
+}
+@media screen and (max-width: 992px) {
+.nav_wrapper {
+  flex-direction: column;
+  gap: 20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.header_bg_text_p {
+  padding: 30px;
+  padding-bottom: 1px;
+  border-radius: 4px;
+  max-width: 450px;
+  background-color: #ffffff76;
+}
+.header_button {
+  margin-top: 40px;
+}
+}
+@media screen and (max-width: 500px) {
+.nav__menu_item {
+  display: none;
+}
+.right button {
+  display: block;
+}
+.sub {
+  display: block;
+}
+.optoin:hover, .sub:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+}
+@media screen and (max-width: 380px) {
+
 }
 
 

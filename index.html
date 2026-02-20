@@ -15,12 +15,23 @@
       <nav class="nav">
         <div class="nav_wrapper">
           <img src="img/Logo_green.png" alt="Alivia" class="nav__menu_logo">
-          <ul class="nav__menu" id="navMenu">
-            <li><a class="nav__menu_item" href="">Why Alivio</a></li>
-            <li><a class="nav__menu_item" href="">Solutions</a></li>
-            <li><a class="nav__menu_item" href="">Community</a></li>
-            <li><a class="nav__menu_item" href="">Pricing</a></li>
-          </ul>
+          <div class="right">
+            <ul class="nav__menu" id="navMenu">
+              <li><a class="nav__menu_item" href="">Why Alivio</a></li>
+              <li><a class="nav__menu_item" href="">Solutions</a></li>
+              <li><a class="nav__menu_item" href="">Community</a></li>
+              <li><a class="nav__menu_item" href="">Pricing</a></li>
+            </ul>
+            <!-- sub_menu -->
+            <button class="toggle"><span class="material_icon"> Menu ⁝ </span></button>
+            <div class="sub_menu">
+              <a href="" class="sub">Why Alivio</a>
+              <a href="" class="sub">Solutions</a>
+              <a href="" class="sub">About</a>
+              <a href="" class="sub">Community</a>
+              <a href="" class="sub">Pricing</a>
+            </div>
+          </div>
           <div class="nav__menu_button">
             <button class="menu_sing">Sing in</button>
             <button class="menu_start">Start Trial</button>
@@ -28,13 +39,19 @@
         </div>
       </nav>
     </div>
-    
+
     <div class="header_background">
       <div class="container">
-        <h1>Be aware, Manage well.</h1>
-        <p class="text_p header__text_p">Everyone experiences stress in different ways. Let Alivio guide you, in a
-          personalized journal experience, to overcome your stress.</p>
-        <button class="header_button">Find Your Way</button>
+        <div class="header_wrapper">
+          <h1>Be aware, Manage well.</h1>
+          <div class="header_bg_text_p">
+            <p class="header__text_p">Everyone experiences stress in different ways. Let Alivio guide you, in a
+              personalized journal experience, to overcome your stress.</p>
+          </div>
+
+          <button class="header_button">Find Your Way</button>
+        </div>
+
       </div>
     </div>
   </header>
@@ -102,7 +119,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
   <!-- Третий раздел -->
   <section class="about">
     <div class="about_wrapper">
@@ -153,7 +170,7 @@
       </div>
     </div>
   </section>
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <img src="img/Alivio-logo-white.png" alt="Alivio" class="logo">
