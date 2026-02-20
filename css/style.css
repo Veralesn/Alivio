@@ -1,0 +1,351 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+/* Основные стили */
+:root {
+  --accent-color: #01996D;
+  --text_p_48-color: #484848;
+  --text_p_42-color: #424242;
+  --nav-menu-color: #292929;
+  --bg-color: #245852;
+}
+.container {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  color: var(--accent-color);
+  line-height: 154%;
+}
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+/* nav menu */
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 18px 0px;
+}
+.nav__menu {
+  display: flex;
+  list-style-type: none;
+  gap: 72px;
+  margin-right: 98px;
+}
+.nav__menu_item {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--nav-menu-color);
+}
+.nav__menu_button {
+  display: flex;
+}
+.menu_sing {
+  background-color: #fff;
+  color: var(--nav-menu-color);
+  padding-right: 35px;
+}
+.menu_start {
+  padding: 13px 50px;
+}
+/* Header */
+.header_background {
+  min-height: 895px;
+  background-image: url(../img/BG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header h1 {
+  font-size: 65px;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  width: 440px;
+  color: var(--accent-color);
+  padding-top: 174px;
+  margin-bottom: 32px;
+}
+.header__text_p {
+  font-size: 20px;
+  max-width: 420px;
+  line-height: 148%;
+  margin-bottom: 51px;
+  color: var(--text_p_48-color);
+}
+.header_button {
+  padding: 20px 50px;
+}
+/* Второй раздел */
+.work_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 169px;
+  margin-bottom: 50px;
+}
+.work_subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 148%;
+  color: var(--text_p_42-color);
+}
+.work_title_h2 {
+  max-width: 584px;
+}
+.work__text_p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text_p_42-color);
+  line-height: 150%;
+  max-width: 665px;
+  padding-bottom: 11px;
+}
+/* Work card */
+.work_card_wrapper {
+  display: flex;
+  gap: 93px;
+  padding-bottom: 47px;
+}
+.work_card_inner:nth-child(2) {
+  margin-top: 290px;
+}
+.work_card_inner:nth-child(3) {
+  margin-top: 55px;
+}
+.work_card_number {
+  font-size: 150px;
+  font-weight: 400;
+  opacity: 20%;
+}
+.work_card_h3 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  color: #000;
+  line-height: 154%;
+}
+.work_card_title_position {
+  position: relative;
+}
+.work_card_h3_position {
+  position: absolute;
+  left: 85px;
+  bottom: 45px;
+}
+.position_02 {
+  left: 78px;
+  bottom: 47px;
+}
+.position_03 {
+  left: 126px;
+  bottom: 46px;
+}
+.work_card_p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  max-width: 400px;
+  color: var(--text_p_42-color);
+  padding-bottom: 55px;
+  padding-top: 10px;
+}
+.work_card_p_02 {
+  padding-top: 7px;
+  padding-bottom: 35px;
+}
+.work_card_p_03 {
+  padding-top: 0;
+  padding-bottom: 45px;
+}
+.work_card_img {
+  width: 390px;
+  height: 492px;
+}
+.work_card_desctop_position {
+  position: relative;
+}
+.work_card_desctop_img {
+  position: absolute;
+  right: 5px;
+  bottom: 123px;
+}
+/* Третий раздел */
+.about {
+  background-color: var(--bg-color);
+}
+.about_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 228px 207px 174px 207px;
+}
+.about_inner {
+  max-width: 600px;
+  margin-right: 25px;
+}
+.about_title_2 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.about_text_p {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 65px;
+}
+.about_button {
+  padding: 20px 50px;
+}
+video {
+  cursor: pointer;
+}
+.video_img {
+  margin-left: 28px;
+  border-radius: 20px;
+}
+.about_video_position {
+  position: relative;
+}
+.video_img_icon {
+  position: absolute;
+  left: 437px;
+  bottom: 217px;
+  cursor: pointer;
+}
+/* Четвертый раздел */
+.product_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 238px;
+}
+.product_inner_img_position {
+  position: relative;
+  padding-left: 60px;
+}
+.product_card_position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 296px;
+  height: 294px;
+  background-color: #fff;
+  left: 0px;
+  bottom: -70px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 18px #A5A5A5;
+}
+.product_card_subtitle {
+  font-size: 14px;
+  padding-top: 26px;
+}
+.product_card_subtitle::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.product_card_avatar {
+  margin-bottom: 11px;
+}
+.product_card_name {
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.product_card_h2 {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+.product_card_list {
+  list-style-type: none;
+}
+.product_card_item {
+  font-size: 10px;
+  padding-top: 20px;
+}
+.product_card_item::before {
+  content: " ● " / "cloudy";
+}
+.product_inner_content {
+    max-width: 584px;
+    padding-top: 6px;
+}
+.product_subtitle {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.product_title_h2 {
+  margin-bottom: 27px;
+}
+.product_text_p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  max-width: 530px;
+  line-height: 145%;
+  margin-bottom: 31px;
+  color: var(--text_p_48-color);
+}
+.product_button {
+  padding: 20px 50px;
+}
+/* Footer */
+.footer {
+  background-color: var(--bg-color);
+  padding: 105px 0;
+}
+.logo {
+  margin-bottom: 73px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  margin-bottom: 60px;
+}
+.footer li:last-child {
+  margin-bottom: 0px;
+}
+.footer_item {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.footer_item:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
